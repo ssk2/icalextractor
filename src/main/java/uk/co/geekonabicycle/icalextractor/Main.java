@@ -73,6 +73,7 @@ public class Main {
 					+ outputFile.getPath());
 		} catch (ParserException e) {
 			System.out.println("Failed to parse iCal fil.");
+			System.out.println(e.getMessage());
 		}
 	}
 

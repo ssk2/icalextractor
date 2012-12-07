@@ -24,8 +24,8 @@ class TSVWriter {
 		List<String> outputLines = Lists.newArrayList();
 
 		for (Component event : eventsToWrite) {
-			String startDate = ((VEvent) event).getStartDate().getValue();
-			String endDate = ((VEvent) event).getEndDate().getValue();
+			String startDate = ((VEvent) event).getStartDate().getDate().toGMTString();
+			String endDate = ((VEvent) event).getEndDate().getDate().toGMTString();
 			String summary = ((VEvent) event).getSummary().getValue();
 			String location = ((VEvent) event).getLocation().getValue();
 			String tab = "\t";
