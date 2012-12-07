@@ -9,7 +9,7 @@ Maven 3
 
 Building
 --------
-	mvn build
+	mvn install
 
 Running
 -------
